@@ -4,19 +4,26 @@
   <meta charset="UTF-8">
   <title>Weather Checker - Assignment 4</title>
   <link rel="stylesheet" href="css/style.css">
+  <!-- Load our JavaScript file after HTML is parsed -->
   <script defer src="js/script.js"></script>
 </head>
 <body>
   <h1>Weather API </h1>
+
+  <!-- We'll use JS to show name and ID here -->
   <p id="studentInfo"></p>
 
-  <input type="text" id="cityInput" placeholder="Enter city name" />
+  <!-- User types a city name here -->
+  <input type="text" id="cityInput" placeholder="Enter city name (e.g. toronto)" />
   <button onclick="getWeather()">Get Weather</button>
 
+  <!-- This is where the result will show up -->
   <div id="weatherResult"></div>
 
+  <!-- Links to the API source and documentation for transparency -->
   <footer>
-    <p>API Docs: <a href="https://openweathermap.org/current" target="_blank">OpenWeatherMap</a></p>
+    <p>API Source: <a href="https://openweathermap.org" target="_blank">OpenWeatherMap Homepage</a></p>
+    <p>Documentation Used: <a href="https://openweathermap.org/current" target="_blank">OpenWeatherMap API Docs</a></p>
   </footer>
 </body>
 </html>
