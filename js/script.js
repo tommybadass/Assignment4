@@ -40,4 +40,12 @@ function getWeather() {
 
       // Show the weather info on the webpage
       document.getElementById("weatherResult").innerHTML = `
-        <p>The weather in <strong>${city}</strong> is <strong>${temp}
+        <p>The weather in <strong>${city}</strong> is <strong>${temp}°C</strong> with <em>${desc}</em>.</p>
+        <img src="${iconUrl}" alt="Weather icon">
+      `;
+    })
+    .catch(error => {
+      // Display an error message if something goes wrong
+      document.getElementById("weatherResult").textContent = error.message;
+    });
+}
